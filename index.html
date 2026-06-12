@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ananda Rokade — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav id="navbar">
+    <div class="nav-logo">&lt;<span>AR</span> /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#experience" onclick="toggleMenu()">Experience</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#achievements" onclick="toggleMenu()">Achievements</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">Available for Internship &amp; Full-time</div>
+        <h1 class="hero-name">Ananda<br/>Rokade</h1>
+        <div class="hero-role">
+          <span id="typed-role"></span><span class="cursor" style="color:var(--accent)">|</span>
+        </div>
+        <p class="hero-desc">
+          Full Stack MERN Developer passionate about building scalable web applications with clean architecture.
+          Gold Medalist · Cummins Scholar · 200+ DSA problems solved.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            View Projects
+          </a>
+          <!-- =====================================================
+               REPLACE href="#" WITH YOUR RESUME PDF PATH
+               e.g.  href="Ananda_Rokade_Resume.pdf" download
+          ===================================================== -->
+          <a href="Resume.pdf" class="btn-outline" download>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 16l4-4m0 0l-4-4m4 4H8m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Download Resume
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">200<span>+</span></span>
+            <span class="stat-label">DSA Problems</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">8.50<span>/10</span></span>
+            <span class="stat-label">Current CGPA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">93<span>%</span></span>
+            <span class="stat-label">Diploma Score</span>
+          </div>
+        </div>
+        <!-- =====================================================
+             REPLACE ALL href VALUES WITH YOUR ACTUAL SOCIAL LINKS
+        ===================================================== -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/anandarokade/" target="_blank" class="social-icon" title="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/anandarokade" target="_blank" class="social-icon" title="GitHub">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 012.5-.34c.85 0 1.7.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/Rokade_Ananda/" target="_blank" class="social-icon" title="LeetCode">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 00-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 00-1.209 2.104 5.35 5.35 0 00-.125.513 5.527 5.527 0 00.062 2.362 5.83 5.83 0 00.349 1.017 5.938 5.938 0 001.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 00-1.951-.003l-2.396 2.392a3.021 3.021 0 01-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 01.066-.523 2.545 2.545 0 01.619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 00-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0013.483 0zm-2.866 12.815a1.38 1.38 0 00-1.38 1.382 1.38 1.38 0 001.38 1.382H20.79a1.38 1.38 0 001.38-1.382 1.38 1.38 0 00-1.38-1.382z"/></svg>
+          </a>
+          <a href="https://www.geeksforgeeks.org/profile/anandabrd5yw" target="_blank" class="social-icon" title="GeeksforGeeks">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.69 3.69 0 01-1.104.695 4.51 4.51 0 01-3.116-.017 5.888 5.888 0 01-1.447-.87l-.03-.022-.094-.071a.45.45 0 00-.583.04l-.148.135a5.888 5.888 0 01-1.413.81 4.51 4.51 0 01-3.163-.008 3.69 3.69 0 01-1.124-.71 3.44 3.44 0 01-.553-.73 3.514 3.514 0 01-.408-1.495h2.427c.044.293.171.554.352.756.176.197.449.327.8.327.354 0 .65-.143.836-.375.19-.236.286-.545.286-.898h2.426c0 .353.096.662.286.898.186.232.482.375.836.375.351 0 .624-.13.8-.327.181-.202.308-.463.352-.756h2.428a3.514 3.514 0 01-.408 1.494zM4 11.385h16v1.23H4zM8.5 9a.5.5 0 100-1 .5.5 0 000 1zm7 0a.5.5 0 100-1 .5.5 0 000 1z"/></svg>
+          </a>
+          <a href="mailto:anandabrokade17@gmail.com" class="social-icon" title="Email">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="hero-photo-wrap fade-up">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-inner">
+            <!-- =====================================================
+                 REPLACE src="" WITH YOUR ACTUAL PHOTO FILE NAME
+                 e.g.  src="ananda.jpg"   or   src="images/photo.png"
+                 The placeholder emoji shows automatically if image fails.
+            ===================================================== -->
+            <img src="img1.jpeg" alt="Ananda Rokade" id="profile-img"
+                 onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex'"/>
+            <div id="photo-placeholder" class="hero-photo-placeholder" style="display:flex"></div>
+          </div>
+        </div>
+        <div class="availability-badge">Open to Work</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">// 01 · about</div>
+        <h2 class="section-title">Who I <em>Am</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <p>I'm <strong>Ananda Rokade</strong>, a Full Stack MERN Developer and Electronics &amp; Telecommunication
+            Engineering student at <strong>PICT Pune</strong>. I love turning complex problems into clean, scalable web applications.</p>
+          <p>With a strong foundation in <strong>Data Structures &amp; Algorithms</strong> (200+ problems across
+            LeetCode, GFG, and CodeForces), I blend algorithmic thinking with practical full-stack development.</p>
+          <p>I'm a <strong>Cummins Scholar '25</strong> and proud <strong>Gold Medalist</strong> (College Topper in Diploma),
+            driven by a passion for learning and building impactful products.</p>
+          <div class="info-grid">
+            <div class="info-item"><label>Location</label><span>Pune, India</span></div>
+            <div class="info-item"><label>Email</label><span>anandabrokade17@gmail.com</span></div>
+            <div class="info-item"><label>CGPA</label><span>8.50 / 10.0</span></div>
+            <div class="info-item"><label>Status</label><span style="color:var(--success)">Open to Opportunities</span></div>
+          </div>
+        </div>
+        <div class="edu-cards fade-up">
+          <div class="edu-card">
+            <h4>Pune Institute of Computer Technology (PICT)</h4>
+            <p>B.E. in Electronics &amp; Telecommunication · 2024 – 2027</p>
+            <div class="edu-badge">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              CGPA: 8.50 · SGPA V: 9.19
+            </div>
+          </div>
+          <div class="edu-card">
+            <h4>Karmayogi Institute of Technology (Polytechnic)</h4>
+            <p>Diploma in E&amp;TC · 2021 – 2024 · Pandharpur</p>
+            <div class="edu-badge">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              Aggregate: 93.53% — First Rank 🥇
+            </div>
+          </div>
+          <div class="edu-card" style="border-color:rgba(245,158,11,0.3)">
+            <h4>Java Programming Certification</h4>
+            <p>Barclays LifeSkills Programme · 2023</p>
+            <div class="edu-badge" style="color:var(--warn);background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2)">
+              ✓ Certified
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">// 02 · skills</div>
+        <h2 class="section-title">Tech <em>Stack</em></h2>
+        <p class="section-sub">Technologies I work with to build full-stack applications.</p>
+      </div>
+      <div class="skills-grid stagger fade-up">
+        <div class="skill-category" style="--i:0">
+          <div class="skill-category-icon">🖥️</div>
+          <h4>Frontend</h4>
+          <div class="skill-pills">
+            <span class="pill">React.js</span><span class="pill">HTML5</span>
+            <span class="pill">CSS3</span><span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category" style="--i:1">
+          <div class="skill-category-icon">⚙️</div>
+          <h4>Backend</h4>
+          <div class="skill-pills">
+            <span class="pill">Node.js</span><span class="pill">Express.js</span><span class="pill">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category" style="--i:2">
+          <div class="skill-category-icon">🗄️</div>
+          <h4>Databases</h4>
+          <div class="skill-pills">
+            <span class="pill">MongoDB</span><span class="pill">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category" style="--i:3">
+          <div class="skill-category-icon">💻</div>
+          <h4>Languages</h4>
+          <div class="skill-pills">
+            <span class="pill">Java</span><span class="pill">Python</span>
+            <span class="pill">JavaScript</span><span class="pill">C++</span>
+          </div>
+        </div>
+        <div class="skill-category" style="--i:4">
+          <div class="skill-category-icon">🛠️</div>
+          <h4>Dev Tools</h4>
+          <div class="skill-pills">
+            <span class="pill">Git</span><span class="pill">GitHub</span>
+            <span class="pill">VS Code</span><span class="pill">Postman</span>
+          </div>
+        </div>
+        <div class="skill-category" style="--i:5">
+          <div class="skill-category-icon">📐</div>
+          <h4>Core CS</h4>
+          <div class="skill-pills">
+            <span class="pill">OOP</span><span class="pill">DBMS</span>
+            <span class="pill">OS</span><span class="pill">CN</span><span class="pill">SDLC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EXPERIENCE ======================== -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">// 03 · experience</div>
+        <h2 class="section-title">Work <em>Experience</em></h2>
+      </div>
+      <div class="exp-timeline fade-up">
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-meta">
+            <span class="exp-company">Fortune Cloud Technologies</span>
+            <span class="exp-period">2026 present</span>
+          </div>
+          <div class="exp-role">MERN Stack Intern</div>
+          <ul class="exp-list">
+            <li>Completed structured training in MERN Stack through hands-on full-stack project development.</li>
+            <li>Developed RESTful APIs and implemented JWT-based authentication for scalable web applications.</li>
+            <li>Integrated MongoDB database and built dynamic React frontends connected to Express.js backends.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">// 04 · projects</div>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+        <p class="section-sub">Things I've built — from campus tools to e-commerce platforms.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up">
+          <div class="project-thumb">🏫</div>
+          <div class="project-body">
+            <div class="project-tag">Full Stack · Campus Tool</div>
+            <h3>CampusFlow — Lost &amp; Found</h3>
+            <p class="project-desc">
+              A digital Lost &amp; Found platform for students to report, track, and claim items.
+              Security guards verify claims and schedule handovers with real-time status and admin analytics.
+            </p>
+            <div class="project-stack">
+              <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Recharts</span>
+            </div>
+            <div class="project-links">
+              <!-- =====================================================
+                   REPLACE href="#" WITH YOUR LIVE DEMO LINK
+                   e.g.  href="https://campusflow.vercel.app"
+              ===================================================== -->
+              <a href="#" target="_blank" class="project-link primary">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <!-- =====================================================
+                   REPLACE href="#" WITH YOUR GITHUB REPO LINK
+                   e.g.  href="https://github.com/YOURUSERNAME/campusflow"
+              ===================================================== -->
+              <a href="#" target="_blank" class="project-link">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 012.5-.34c.85 0 1.7.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb">🍕</div>
+          <div class="project-body">
+            <div class="project-tag">Full Stack · E-Commerce</div>
+            <h3>Food Delivery Platform</h3>
+            <p class="project-desc">
+              A complete food ordering platform with secure auth, dynamic menu, shopping cart,
+              Stripe payment integration, and an admin panel for managing food items and live orders.
+            </p>
+            <div class="project-stack">
+              <span class="tech-tag">React.js</span><span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Stripe</span>
+            </div>
+            <div class="project-links">
+              <!-- =====================================================
+                   REPLACE href="#" WITH YOUR LIVE DEMO LINK
+              ===================================================== -->
+              <a href="#" target="_blank" class="project-link primary">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              <!-- =====================================================
+                   REPLACE href="#" WITH YOUR GITHUB REPO LINK
+              ===================================================== -->
+              <a href="" target="_blank" class="project-link">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 012.5-.34c.85 0 1.7.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ACHIEVEMENTS ======================== -->
+  <section id="achievements">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">// 05 · achievements</div>
+        <h2 class="section-title">Highlights &amp; <em>Awards</em></h2>
+      </div>
+      <div class="achieve-grid stagger fade-up">
+        <div class="achieve-card" style="--i:0">
+          <div class="achieve-icon">🥇</div>
+          <div>
+            <h4>Gold Medal — College Topper</h4>
+            <p>Secured First Rank in Diploma Program at Karmayogi Institute of Technology.</p>
+          </div>
+        </div>
+        <div class="achieve-card" style="--i:1">
+          <div class="achieve-icon">🏆</div>
+          <div>
+            <h4>Second Prize — Project Competition</h4>
+            <p>Won runner-up prize at the inter-college project competition at Karmayogi Engineering College.</p>
+          </div>
+        </div>
+        <div class="achieve-card" style="--i:2">
+          <div class="achieve-icon">🎓</div>
+          <div>
+            <h4>Cummins Scholar '25</h4>
+            <p>Selected as a scholar under the prestigious Cummins India Scholarship Programme.</p>
+          </div>
+        </div>
+        <div class="achieve-card" style="--i:3">
+          <div class="achieve-icon">💡</div>
+          <div>
+            <h4>200+ DSA Problems Solved</h4>
+            <p>Consistently solved problems on LeetCode, GeeksforGeeks, and CodeForces in Java.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <div class="section-eyebrow">// 06 · contact</div>
+        <h2 class="section-title">Let's <em>Connect</em></h2>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-info fade-up">
+          <p>I'm actively looking for <strong style="color:var(--text)">internship and entry-level opportunities</strong>.
+            Whether you have a project idea, a job opening, or just want to say hello — my inbox is open!</p>
+          <div class="contact-links">
+            <a href="mailto:anandabrokade17@gmail.com" class="contact-link-item">
+              <span class="icon">📧</span><span>anandabrokade17@gmail.com</span>
+            </a>
+            <!-- =====================================================
+                 REPLACE WITH YOUR ACTUAL LINKEDIN URL
+            ===================================================== -->
+            <a href="https://linkedin.com/in/YOURPROFILE" target="_blank" class="contact-link-item">
+              <span class="icon">💼</span><span>https://www.linkedin.com/in/anandarokade/</span>
+            </a>
+            <!-- =====================================================
+                 REPLACE WITH YOUR ACTUAL GITHUB URL
+            ===================================================== -->
+            <a href="https://github.com/YOURUSERNAME" target="_blank" class="contact-link-item">
+              <span class="icon">🐙</span><span>https://github.com/anandarokade</span>
+            </a>
+            <div class="contact-link-item" style="cursor:default">
+              <span class="icon">📍</span><span>Pune, Maharashtra, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form fade-up" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="f-name" placeholder="John Doe" required/>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="f-email" placeholder="john@company.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="f-msg" rows="5" placeholder="Hi Ananda, I'd love to discuss..." required></textarea>
+          </div>
+          <!-- =====================================================
+               Form uses mailto by default.
+               For a proper backend swap in Formspree / EmailJS here.
+          ===================================================== -->
+          <button type="submit" class="form-submit">Send Message →</button>
+          <p class="form-note" id="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <p>Designed &amp; built by <strong>Ananda Rokade</strong> · 2025 · Pune, India</p>
+    <p style="margin-top:0.4rem;font-size:0.75rem">Made with ☕ and lots of console.log()</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
